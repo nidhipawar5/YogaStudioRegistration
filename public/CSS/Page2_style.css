@@ -1,0 +1,14 @@
+body {
+  background-image: url("backgroundImg.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 200%;
+}
+.jumbotron {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}

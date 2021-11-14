@@ -1,0 +1,51 @@
+body {
+  background-image: url("backgroundImg.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#payment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#payment button {
+  margin-right: 5px;
+}
+
+body h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#both {
+  display: flex;
+}
+#age {
+  width: 50%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #b1bfd8;
+  color: black;
+  text-align: center;
+}
