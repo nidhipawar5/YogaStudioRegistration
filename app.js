@@ -1,11 +1,11 @@
-require("../models/db");
+require("./models/db");
 
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 const bodyparser = require("body-parser");
 
-const User = require("../models/userModel");
+const User = require("./models/userModel");
 const app = express();
 
 
@@ -16,8 +16,8 @@ app.use(
 );
 app.use(bodyparser.json());
 
-const viewsPath = path.join(__dirname, "../templates/views");
-const publicDirectoryPath = path.join(__dirname, "../public");
+const viewsPath = path.join(__dirname, "./templates/views");
+const publicDirectoryPath = path.join(__dirname, "./public");
 
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
