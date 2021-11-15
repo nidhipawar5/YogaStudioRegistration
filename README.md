@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# FlexMoneyAssignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Yoga Admission Form
 
-## Available Scripts
+### The project is divided into three section
 
-In the project directory, you can run:
+1. Registration on the portal
+2. Making Payment
+3. Confirmation and Database storage
 
-### `npm start`
+### Registration Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Any user age between 18 - 65 can register on the portal.
+2. User need to fill their basic details.
+3. After successful registration, payment page will open
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Payment Page
 
-### `npm test`
+1. After successful registration, user need to pay a fixed amount of INR 500/-.
+2. User can choose payment method as Debit Card or Credit Card.
+3. User need to fill the card detail.
+4. After filling correct information, payment will be successful and confirmation message is shown.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Confirmation Page
 
-### `npm run build`
+1. After successful payment, a comfirmation will be shown.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Database
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. After successful payment, user data will be stored in the database.
+2. Database store all information after payment.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Important Assumptions made
 
-### `npm run eject`
+1. There is no need of login and verification, just register and pay and you get your slot.
+2. Every user have a unique ID which will be used to access the service within slot.
+3. Payment detail should not be stored just shown there.
+4. By clicking on Payment button, payment will be successful.
+5. Validity of one time payment is till last day of the month.
+6. User need to register and make payment again for booking a new slot.
+7. User cannot book more than one time in a month to avoid clash with other slot.
+8. Users are Indian citizen. 10 digit mobile no validation.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Other important details
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. The validation is done for the registration page only.
+2. Plain password is stored in the database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Step to run the project
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repo.
+2. Intall node and mongoDB.
+3. Install dependencies mention in package.json file.
+4. Run mongoDB.
+5. Navigate to src folder and run command "node app.js"
