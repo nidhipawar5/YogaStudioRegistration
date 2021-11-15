@@ -49,7 +49,7 @@ app.post("/user", async (req, res) => {
   try {
     
 
-    if(age < 18 || age > 65) {
+    if(age <= 18 || age > 65) {
       throw ("Age should be between 18 and 65");
       
     }
@@ -80,7 +80,7 @@ app.post("/payment", async (req, res) => {
   user.batch = batch;
 
   console.log(user);
-
+  
 
 
   try {
