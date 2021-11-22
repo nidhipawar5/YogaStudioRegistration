@@ -52,4 +52,4 @@
 2. Intall node and mongoDB.
 3. Install dependencies mention in package.json file.
 4. Run mongoDB.
-5. Navigate to src folder and run command "node app.js"
+5. Run command "node app.js"
